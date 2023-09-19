@@ -1,3 +1,6 @@
+require_relative 'opcoes_menu.rb'
+require_relative 'helpers.rb'
+
 puts "GERENCIADOR DE TAREFAS"
 puts "______________________\n\n"
 
@@ -5,18 +8,7 @@ puts "Informe o caminho do arquivo com a extensão. Ex.: tarefas.txt"
 print "> "
 file_name = gets.chomp
 
-tasks_from_file = open(file_name)
-
-tasks = []
-
-File.readlines(file_name, chomp: true).each do |line|
-    split_task = line.split(' - ')
-    number = split_task[0]
-    description = split_task[1]
-    status = split_task[2]
-    task = { number: number, description: description, status: status }
-    tasks << task
-end
+$tasks = extract_from_file(file_name)
 
 puts
 
