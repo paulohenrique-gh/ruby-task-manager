@@ -12,5 +12,14 @@ def extract_from_file(file_name)
         tasks << task
     end
 
+    tasks_from_file.close
+
     return tasks
+end
+
+def get_task_string(task)
+    puts """
+        Número: #{task[:number]}
+        Descrição: #{task[:description]}
+        Status: #{task[:status]}"""
 end

@@ -1,6 +1,6 @@
 # Gerenciador de Tarefas
 
-## Projeto para praticar e consolidar alguns conceitos de Ruby que aprendi recentemente
+## Projeto para praticar e consolidar alguns conceitos de Ruby
 
 - File I/O
 - Array

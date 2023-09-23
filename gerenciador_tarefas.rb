@@ -1,5 +1,5 @@
-require_relative 'opcoes_menu.rb'
-require_relative 'helpers.rb'
+require_relative 'menu/opcoes_menu.rb'
+require_relative 'helpers/helpers.rb'
 
 puts "GERENCIADOR DE TAREFAS"
 puts "______________________\n\n"
@@ -16,9 +16,9 @@ end
 
 $new_tasks = []
 
-puts
 
 loop do
+    puts
     puts "Digite uma das opções:"
     puts "1. Criar nova tarefa"
     puts "2. Listar todas as tarefas"
@@ -34,6 +34,8 @@ loop do
         create_task()
     when "2"
         list_tasks()
+    when "3"
+        mark_as_done()
     when "6"
         exit(0)
     end
