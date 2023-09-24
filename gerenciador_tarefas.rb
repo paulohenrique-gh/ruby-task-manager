@@ -4,7 +4,7 @@ require_relative 'helpers/helpers.rb'
 puts "GERENCIADOR DE TAREFAS"
 puts "______________________\n\n"
 
-puts "Informe o caminho do arquivo com a extensão. Ex.: tarefas.txt"
+puts "(Opcional) Informe o caminho do arquivo com a extensão. Ex.: tarefas.txt"
 print "> "
 file_name = gets.chomp
 
