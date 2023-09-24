@@ -31,11 +31,15 @@ loop do
 
     case option
     when "1"
-        create_task()
+        create_task
     when "2"
-        list_tasks()
+        list_tasks
     when "3"
-        mark_as_done()
+        mark_as_done
+    when "4"
+        remove_task
+    when "5"
+        save
     when "6"
         exit(0)
     end
