@@ -47,7 +47,7 @@ end
 
 
 def remove_task
-    number = number = get_task_number()    
+    number = get_task_number()    
 
     if number > $tasks.last[:number]
         puts "\n\tNão existe tarefa com o número informado"
