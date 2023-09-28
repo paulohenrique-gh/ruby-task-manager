@@ -10,12 +10,9 @@ file_name = gets.chomp
 
 $tasks = []
 
-if File.exist?(file_name)
-    $tasks = extract_from_file(file_name)
-end
+$tasks = extract_from_file(file_name) if File.exist?(file_name)
 
 $new_tasks = []
-
 
 loop do
     puts

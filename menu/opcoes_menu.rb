@@ -15,12 +15,10 @@ def create_task
 
     puts "\n\tTarefa #{task_description} adicionada com sucesso"
     get_task_string(task)
-
 end
 
 
 def list_tasks
-    puts
     $tasks.each do |task|
         get_task_string(task)
     end

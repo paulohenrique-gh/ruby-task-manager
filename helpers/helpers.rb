@@ -14,7 +14,7 @@ def extract_from_file(file_name)
 
     tasks_from_file.close
 
-    return tasks
+    tasks
 end
 
 
@@ -30,7 +30,7 @@ def get_task_number
     puts "\nInforme o número da tarefa"
     print "> "
     number = gets.chomp.to_i
-    return number
+    number
 end
 
 
@@ -40,5 +40,5 @@ def prepare_string_for_file
         task_string = "#{task[:number]} - #{task[:description]} - #{task[:status]}\n"
         tasks_to_file_string << task_string
     end
-    return tasks_to_file_string.chomp!
+    tasks_to_file_string.chomp!
 end
